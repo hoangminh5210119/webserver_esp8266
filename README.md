@@ -1,4 +1,8 @@
 # Hướng dẫn điều khiển thiết bị qua WebServer
+
+- Mở serial monitor lên để xem địa chỉ IP của thiết bị.
+- Mở trình duyệt web lên gõ vào `http://192.168.4.1/` đối với chế độ phát WiFi, gõ vào `http://esp8266.local/` nếu là chế độ dùng esp8266 kết nối vào mạng wifi.
+- Muốn dùng được `http://esp8266.local/` thì cần cài thêm [Bonjour](https://support.apple.com/downloads/bonjour-for-windows) cho Window.
 ---
 1. File `webserver.ino`.
 

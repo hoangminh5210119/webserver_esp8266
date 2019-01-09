@@ -2,15 +2,19 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
+#include <ESP8266mDNS.h>
 
 #include "pageControl.h"
 
-// #define STA_MODE
+#define STA_MODE
 
 #ifdef STA_MODE
   //SSID and Password of your WiFi router
-  const char *ssid = "wifi cua toi";
-  const char *password = "deochonhe";
+  // const char *ssid = "wifi cua toi";
+  // const char *password = "deochonhe";
+
+  const char *ssid = "cdttech.vn";
+  const char *password = "117duongso3";
 #endif
 
 ESP8266WebServer server(80);
@@ -55,6 +59,13 @@ void setup(void)
     }
     Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
+    if (!MDNS.begin("esp8266")) {
+      Serial.println("Error setting up MDNS responder!");
+      while (1) {
+        delay(1000);
+      }
+    }
+    Serial.println("http://esp8266.local/");
   #else
     WiFi.mode(WIFI_AP);
     WiFi.softAP("my wifi", "12344321");
