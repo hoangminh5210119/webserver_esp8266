@@ -1,6 +1,6 @@
 # Hướng dẫn điều khiển thiết bị qua WebServer
 ---
-1. giải thích `webserver.ino`.
+1. File `webserver.ino`.
 
 - `// #define STA_MODE` dùng để định nghĩa sữ dụng chế độ nào của ESP8266. Nếu dùng ở chế độ lấy ESP8266 kết nối vào mạng WiFi thì bỏ dấu `//`.
 
@@ -21,9 +21,13 @@
 
 
 
-2. giải thích `pageControl.h`.
+2. File `pageControl.h`.
 - khai báo `PROGMEM` để lưu trữ trong bộ nhớ flash thay vì SRAM.
 - `<form menthod='get'><input class='button' type='submit' name='LED1' value='ON' ></form>` tạo nút nhấn với `name='LED1'` và value='ON'.
 
 - `name`và `value` là 2 tham số được dùng trong quá trình gửi nhận dữ liệu giữa người dùng thao tác trên trình duyệt Web và ESP8266.
+
+3. Kết nối.
+
+![kết nối phần cứng](/images/hardware.png)
 ---
