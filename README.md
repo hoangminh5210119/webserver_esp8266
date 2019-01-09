@@ -34,4 +34,8 @@
 3. Kết nối.
 
 ![kết nối phần cứng](/images/hardware.png)
+
+4. giao diện điều khiển
+
+![giao diện điều khiển](/images/control.PNG)
 ---
