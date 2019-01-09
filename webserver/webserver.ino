@@ -10,11 +10,8 @@
 
 #ifdef STA_MODE
   //SSID and Password of your WiFi router
-  // const char *ssid = "wifi cua toi";
-  // const char *password = "deochonhe";
-
-  const char *ssid = "cdttech.vn";
-  const char *password = "117duongso3";
+  const char *ssid = "wifi cua toi";
+  const char *password = "deochonhe";
 #endif
 
 ESP8266WebServer server(80);
